@@ -21,7 +21,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Gitub Repo](https://github.com/trafiki/stats-preview-card-component)
 - Live Site URL: [Github Page](https://trafiki.github.io/stats-preview-card-component/)
 
 ### What I learned
