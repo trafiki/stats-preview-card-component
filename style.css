@@ -22,18 +22,15 @@ p {
 }
 
 h1, h3 {
+    color: hsl(0, 0%, 100%);
     font-family: 'Inter', sans-serif;
 }
 
-h1 {
-    color: hsl(0, 0%, 100%);
-}
-h3 {
-    color: hsla(0, 0%, 100%, 0.6);
-}
 
 .row {
     display: flex;
+    flex-direction: row-reverse;
+    background: hsl(244, 38%, 16%);
 }
 .col-6 {
     flex: 0 0 50%;
@@ -41,5 +38,58 @@ h3 {
 
 .container {
     width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+    max-width: 1440px;
+    margin-top: 10em;
+}
+
+.stats {
+    display: flex;
+}
+
+.col-4 {
+    flex: 0 0 33%;
+}
+
+.overlay {
+    background: url(images/image-header-desktop.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.col-6.card-content {
+    padding: 5em;
+}
+
+.col-6.card-content span {
+    color: hsl(277, 64%, 61%);
+}
+
+p.content-body {
+    margin-bottom: 3em;
+    line-height: 1.5;
+}
+
+.stats p {
+    margin-top: 0;
+}
+
+.stats h3 {
+    margin-bottom: 0;
+}
+
+.col-6.card-image {
+    position: relative;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #c506f1;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
 }
