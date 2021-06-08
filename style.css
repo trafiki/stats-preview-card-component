@@ -38,9 +38,10 @@ h1, h3 {
 
 .container {
     width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     max-width: 1440px;
     margin-top: 10em;
+    border-radius: 10px;
 }
 
 .stats {
@@ -92,4 +93,29 @@ p.content-body {
     top: 0;
     left: 0;
     opacity: 0.5;
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+@media only screen and (max-width: 480px){
+  * {
+      overflow-y: visible;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .col-6.card-content {
+    padding: 1em;
+}
+.row {
+    flex-direction: column;
+    height: 100vh;
+}
+.container {
+    margin-top: 0;
+    padding-top: 2em;
+  }
 }
