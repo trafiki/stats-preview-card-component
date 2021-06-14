@@ -96,11 +96,10 @@ p.content-body {
 @media only screen and (max-width: 768px) {
   .row {
     flex-direction: column;
-    height: 900px;
   }
 
   .col-6.card-image {
-    flex: 0 0 25%;
+    height: 300px;
   }
 
   .container {
@@ -117,7 +116,11 @@ p.content-body {
   }
 
   .stats .col-4 {
-    flex-basis: 100%;
+    flex-basis: auto;
+  }
+
+  .col-6 {
+    flex: 0 0 auto;
   }
 
   /* * {
